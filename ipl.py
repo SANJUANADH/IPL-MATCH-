@@ -12,6 +12,7 @@ st.header('IPL Matches')
 
 df = pd.read_csv('matches.csv')
 df.head(10)
+st.dataframe(df.head(10))
 
 
 alt.Chart(df).mark_bar().encode(
